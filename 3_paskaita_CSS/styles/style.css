@@ -1,0 +1,55 @@
+body {
+    background-color: bisque;
+}
+
+/* Elemento selektorius */
+h1 {
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* kombinuotas kalsės su elementu seletorius */
+h1.raudonas {
+    color: #ff7272;
+}
+
+/* Pseudo klasės selektorius */
+h1:hover {
+    color: yellow;
+}
+
+p.raudonas {
+    color: #870000;
+    font-weight: bold;
+}
+
+/* id selektorius */
+#main-title {
+    color: green;
+    background-color: black;
+}
+
+#main-title:hover {
+    color: violet;
+}
+
+/* kelių kalsių selektorius */
+h2.sub-title.zalia {
+    text-align: center;
+    font-size: 32px;
+    color: brown;
+}
+
+/* hierarchinis selektorius */
+table p {
+    font-size: 10px;
+}
+
+/* selektorių sąrašas */
+table, th, td {
+    border: 3px solid #115528;
+}
+
+.kursyvas {
+    font-style: italic;
+}
