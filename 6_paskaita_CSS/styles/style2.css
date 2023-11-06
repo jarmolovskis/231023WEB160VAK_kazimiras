@@ -1,0 +1,69 @@
+.wrapper {
+    margin: 0 auto;
+    width: 1000px;
+    padding: 100px;
+    background-color: #e5e5e5;
+}
+
+.slide {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    background-color: #c7c7c7;
+    /* Tam ,kad išlipantys iš ribų kiti elementai būtų paslėti. */
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255, 0.5);
+    transition: all 2s;
+}
+
+.wrapper:hover .overlay {
+    background-color: rgb(255, 255, 255, 0.85);
+}
+
+.wrapper:hover h1 {
+    font-size: 40px;
+}
+
+h1 {
+    margin: 0;
+    transition: all 2s;
+    /* position, left, top, transform tam, kad iscentruoti absolute elementa tevinio relatavi elemento teritorijoje */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    font-size: 32px;
+}
+
+.menu {
+    background-color: grey;
+    padding: 20px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu h2 {
+    margin: 0;
+}
+
+.author-image {
+    border-radius: 50%;
+}
