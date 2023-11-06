@@ -1,0 +1,90 @@
+:root {
+    /* blue pavadinimas gali buti bet koks kitas musu sugalvotas */
+    --blue: #5890ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: orange;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "side header"
+    "side content"
+    "side footer";
+  background-color: #ffe8be;
+  width: 90%;
+  margin: 0 auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.header {
+  background-color: #80ff84;
+  grid-area: header;
+  /* grid-column: span 2; */
+}
+
+.sidemenu {
+  background-color: var(--blue);
+  grid-area: side;
+  /* grid-row: span 3; */
+}
+
+.content {
+  background-color: #e180ff;
+  grid-area: content;
+}
+
+.footer {
+  background-color: #ff8080;
+  grid-area: footer;
+  /* grid-column: span 2; */
+}
+
+.container > div {
+  padding: 20px;
+}
+
+h1 {
+    color: var(--blue);;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    background-color: #5d00ff;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "header"
+      "side"
+      "content"
+      "footer";
+    background-color: #cbbeff;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+      background-color: #00ff1a;
+      margin: 0;
+    }
+  
+    .container {
+      grid-template-columns: 1fr;
+      background-color: #beffca;
+      grid-gap: 5px;
+      padding: 5px;
+    }
+  }
