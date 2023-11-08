@@ -12,3 +12,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
+
+.row p {
+    background-color: orange;
+}
