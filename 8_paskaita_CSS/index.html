@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- MAterialize iconeles -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified Materialize fremework CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <title>Document</title>
+  </head>
+  <body class="yellow lighten-5">
+
+    <div class="container">
+
+        <h1 class="orange lighten-3 orange-text text-darken-4 center-align">
+            CSS paskutinė užsiėmimas!
+        </h1>
+
+        <a class="waves-effect waves-light btn-large orange lighten-3 orange-text text-darken-4">
+            <i class="material-icons left">brightness_low</i>
+            button
+        </a>
+
+        <table>
+        <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+        </tr>
+        <tr>
+            <td>Alan</td>
+            <td>Jellybean</td>
+            <td>$3.76</td>
+        </tr>
+        <tr>
+            <td>Jonathan</td>
+            <td>Lollipop</td>
+            <td>$7.00</td>
+        </tr>
+        </table>
+
+        <ul class="collapsible">
+            <li>
+            <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+            <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+            <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+        </ul>
+
+        <div class="row center-align white-text">
+            <div class="col red s12"><p>s12</p></div>
+            <div class="col green s12 m4 l2"><p>s12 m4</p></div>
+            <div class="col green s12 m4 l8"><p>s12 m4</p></div>
+            <div class="col green s12 m4 l2"><p>s12 m4</p></div>
+        </div>
+
+        <div class="row center-align white-text">
+            <div class="col blue s12 m6 l3"><p>s12 m6 l3</p></div>
+            <div class="col blue s12 m6 l3"><p>s12 m6 l3</p></div>
+            <div class="col blue s12 m6 l3"><p>s12 m6 l3</p></div>
+            <div class="col blue s12 m6 l3"><p>s12 m6 l3</p></div>
+        </div>
+
+    </div>
+
+    <!-- Compiled and minified Materialize fremework JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.collapsible');
+            var instances = M.Collapsible.init(elems);
+        });
+    </script>
+  </body>
+</html>

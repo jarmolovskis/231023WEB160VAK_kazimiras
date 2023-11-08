@@ -1,0 +1,12 @@
+$primary: #ff0000;
+
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+h1 {
+    text-align: left;
+}
+
+p {
+    color: green !important;
+}
