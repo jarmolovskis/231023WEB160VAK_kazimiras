@@ -1,12 +1,14 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
 $primary: #ff0000;
+
+$custom-colors: (
+  "custom-color": #900
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
 
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
-
-h1 {
-    text-align: left;
-}
-
-p {
-    color: green !important;
-}
