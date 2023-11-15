@@ -134,6 +134,8 @@ let k3 = suma(15, 87);
 console.log(k3);
 
 // prideti menesio ir dienos patikrinima
+// "2023-05-09"
+// new Date("2023-05-09");
 function arPilnametis(gimimoData) {
 
     let dabartiniaiMetai = new Date().getFullYear();
