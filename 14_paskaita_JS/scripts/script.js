@@ -94,5 +94,22 @@ paveiksleliaiSuKlasemis[paveiksleliaiSuKlasemis.length - 1].insertAdjacentElemen
 
 
 
+let mygtukas = document.getElementById("magic-button");
 
+mygtukas.onclick = function() {
+    console.log("MYGTUKAS BUVO PASPAUSTAS!");
+};
 
+let mygtukas2 = document.getElementById("magic-button-2");
+
+// mygtukas2.addEventListener("click", function() {
+//     if (document.body.style.backgroundColor === "orange") {
+//         document.body.style.backgroundColor = "green";
+//     } else {
+//         document.body.style.backgroundColor = "orange";
+//     }
+// });
+
+mygtukas2.addEventListener("click", function() {
+    document.body.classList.toggle("change-bg");
+});
