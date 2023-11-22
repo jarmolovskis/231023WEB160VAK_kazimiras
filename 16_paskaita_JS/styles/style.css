@@ -1,0 +1,12 @@
+.active {
+    color: blue;
+}
+
+
+body {
+    background-color: red;
+}
+
+body.change-bg {
+    background-color: blue;
+}
